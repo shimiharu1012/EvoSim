@@ -1,0 +1,36 @@
+<head>
+    <title>EvoSim</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            text-align: center; /* テキストを中央揃えにする */
+        }
+        #text_area {
+            font-size: 20px;
+            width: 600px;
+            height: 400px;
+            padding: 10px;
+            margin: 0 auto; /* 中央に配置する */
+        }
+        #line_count_display, #length_display, #length_display_no_spaces {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ここからPyScript -->
+    <py-config>
+        packages = ["matplotlib", "numpy","mealpy","opfunu","micropip","setuptools"]
+        [[fetch]]
+        files = ["./pyscript.py"]
+    </py-config>
+    <py-script src="./pyscript.py">
+        //　ここに書いたpythonsのコードは無視される
+        display("Hello from index.html")
+    </py-script>
+
+</body>
+
